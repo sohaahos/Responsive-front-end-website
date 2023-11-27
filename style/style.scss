@@ -1,0 +1,69 @@
+@import 'variable';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+}
+%logo{
+    a{
+        display: flex;
+        width: 100px;
+        align-items: center;
+        color: $color-sentences;
+        text-decoration: none;
+        i{
+            font-size: 75px;
+            margin-right: 20px;
+            color: $color-web;
+        }
+        h1{
+            font-size: 55px;
+        }   
+    } 
+}
+%bg{
+    background-color: #202836;;
+}
+%but{
+    color: #fff;
+    background-color: $color-web;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 90px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover{
+        background-color: darken($color-web, 13%);
+    }                            
+}
+%h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+body{
+    background-color: $color-body;
+    color: $color-sentences;
+}
+
+@import 'header';
+@import'introPage';
+@import'bbody';
+@import'fotex';
+@import'cards';
+@import'acem';
+@import'footer';
+
+
+
+
+
+
+
+

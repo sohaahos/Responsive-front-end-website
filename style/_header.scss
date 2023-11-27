@@ -1,0 +1,115 @@
+.sec{
+    width: 100%; 
+    height: 120px;
+    display: flex; 
+    justify-content: center;
+    background-color:$color-body;
+    position: fixed;
+    box-shadow: 0.5px 0.2px 20px rgb(122, 128, 122, 0.1);
+    top: 0;
+    z-index: 1;
+    .allSea{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        
+       .logo{
+            @extend%logo  
+        }
+        .navig{
+            ul{
+                list-style-type: none;
+                display: flex;
+                li{
+                    margin: 0 20px;
+                    padding: 11px;
+                    font-family: $font-body;
+                    font-size: 20px;
+                    font-weight: bold;
+                    user-select: none;
+                    border-radius: 20px;
+                    border-bottom: 5px solid $color-body;
+                    transition: .5s ease-in-out;
+                    a{
+                        color: $color-sentences;
+                        text-decoration: none;
+                    }
+                    &:hover{
+                        font-family: $font-body;
+                        border-bottom: 5px solid $color-web;
+                        cursor: pointer;
+                    }
+                }
+                
+            }       
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #navi1{
+        display: none;
+    }
+
+    #navi2 {
+        display: none;
+        ul{
+          display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(28, 36, 49, 0.8) ;  
+        }
+        
+        li{
+        list-style: none;
+        padding: 25px;
+        a{
+            text-decoration: none;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            }
+            &:hover{
+                align-items: center;
+                border-radius: 17px;
+            }  
+        }
+    }
+    #menu{
+        position: fixed;
+        right: 20px;
+        font-size: 28px;
+        color: $color-sentences;
+        z-index: 1;
+    }
+    #menu:hover{
+        animation: tar 0.5s ease-in-out forwards;
+        cursor: pointer;
+    }
+    @keyframes tar {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(180deg);
+            color: $color-web;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #menu{
+        display: none;
+    }
+    #navi2{
+        display: none;
+    }
+}

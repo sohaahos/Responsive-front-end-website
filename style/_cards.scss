@@ -1,0 +1,36 @@
+.cards{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 100%;
+    .allCar{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        .card{
+            margin-top: 35px;
+            width: 450px ;
+            @extend%bg;
+            padding: 25px 50px;
+            border-radius: 15px;
+            box-shadow: 8px 8px 4px rgb(163, 163, 177,0.1);
+            p{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                letter-spacing: 1px;
+            }
+            #fo{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                img{
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+                div{
+                    margin-left:10px ;
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+footer .footerLogo a, .sec .allSea .logo a {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+footer .footerLogo a i, .sec .allSea .logo a i {
+  font-size: 75px;
+  margin-right: 20px;
+  color: #58b8cc;
+}
+footer .footerLogo a h1, .sec .allSea .logo a h1 {
+  font-size: 55px;
+}
+
+.access .diAccess, .cards .allCar .card {
+  background-color: #202836;
+}
+
+.access .diAccess .email button, .introPage .allIntro .contentIntro button {
+  color: #fff;
+  background-color: #58b8cc;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 90px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.access .diAccess .email button:hover, .introPage .allIntro .contentIntro button:hover {
+  background-color: #3598ad;
+}
+
+.access .diAccess .contentAcc h2, .han .allB #dd2 h2, .bobody .allCla .class h2, .introPage .allIntro .contentIntro h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: #1c2431;
+  color: #fff;
+}
+
+.sec {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  background-color: #1c2431;
+  position: fixed;
+  box-shadow: 0.5px 0.2px 20px rgba(122, 128, 122, 0.1);
+  top: 0;
+  z-index: 1;
+}
+.sec .allSea {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.sec .allSea .navig ul {
+  list-style-type: none;
+  display: flex;
+}
+.sec .allSea .navig ul li {
+  margin: 0 20px;
+  padding: 11px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 20px;
+  border-bottom: 5px solid #1c2431;
+  transition: 0.5s ease-in-out;
+}
+.sec .allSea .navig ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.sec .allSea .navig ul li:hover {
+  font-family: "Fira Sans", sans-serif;
+  border-bottom: 5px solid #58b8cc;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #navi1 {
+    display: none;
+  }
+  #navi2 {
+    display: none;
+  }
+  #navi2 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(28, 36, 49, 0.8);
+  }
+  #navi2 li {
+    list-style: none;
+    padding: 25px;
+  }
+  #navi2 li a {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #navi2 li:hover {
+    align-items: center;
+    border-radius: 17px;
+  }
+  #menu {
+    position: fixed;
+    right: 20px;
+    font-size: 28px;
+    color: #fff;
+    z-index: 1;
+  }
+  #menu:hover {
+    animation: tar 0.5s ease-in-out forwards;
+    cursor: pointer;
+  }
+  @keyframes tar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+      color: #58b8cc;
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  #menu {
+    display: none;
+  }
+  #navi2 {
+    display: none;
+  }
+}
+.introPage {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  margin-top: 200px;
+}
+.introPage .allIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introPage .allIntro .introIm {
+  width: 48%;
+  height: 100%;
+}
+.introPage .allIntro .introIm img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: aniIn 0.8s ease-in-out;
+}
+@keyframes aniIn {
+  0% {
+    transform: translateY(-120%);
+  }
+  70% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.introPage .allIntro .contentIntro {
+  margin-top: 60px;
+  width: 45%;
+  text-align: center;
+}
+.introPage .allIntro .contentIntro p {
+  margin-top: 60px;
+  text-shadow: 1px 1px 15px #58b8cc;
+  letter-spacing: 2.5px;
+}
+.introPage .allIntro .contentIntro button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.bobody {
+  width: 100%;
+  margin: 160px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bobody .allCla {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bobody .allCla .class {
+  width: 50vh;
+  height: 250px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.bobody .allCla .class img {
+  width: 35%;
+  height: 120px;
+}
+.bobody .allCla .class p {
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.han {
+  margin: 60px 0 0 0;
+  width: 100%;
+  overflow: hidden;
+}
+.han .allB {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #58b8cc;
+}
+.han .allB div {
+  height: auto;
+  margin-top: 90px;
+}
+.han .allB #dd1 {
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.han .allB #dd1 img {
+  width: 100%;
+  height: 100%;
+}
+.han .allB #dd2 {
+  width: 300px;
+}
+.han .allB #dd2 p {
+  margin: 20px 0 20px 0;
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+.han .allB #dd2 a {
+  margin-left: 20px;
+  color: #1c2431;
+}
+
+.cards {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.cards .allCar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cards .allCar .card {
+  margin-top: 35px;
+  width: 450px;
+  padding: 25px 50px;
+  border-radius: 15px;
+  box-shadow: 8px 8px 4px rgba(163, 163, 177, 0.1);
+}
+.cards .allCar .card p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+}
+.cards .allCar .card #fo {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.cards .allCar .card #fo img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+.cards .allCar .card #fo div {
+  margin-left: 10px;
+}
+
+.access {
+  margin-top: 150px;
+  position: relative;
+  top: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.access .diAccess {
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 8px 8px 4px rgba(163, 163, 177, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.access .diAccess .contentAcc {
+  margin: 80px 55px;
+}
+.access .diAccess .contentAcc p {
+  margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.access .diAccess .email {
+  width: 90%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.access .diAccess .email input {
+  margin-top: 5px;
+  width: 500px;
+  padding: 15px 10px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+.access .diAccess .email button {
+  margin-top: 5px;
+  width: 200px;
+}
+
+footer {
+  width: 100%;
+  background-color: #131821;
+  overflow: hidden;
+}
+footer .footerLogo {
+  display: flex;
+  padding: 100px;
+}
+footer .allFo {
+  padding: 0 60px 60px 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .allFo .fot {
+  padding-top: 50px;
+  width: 260px;
+}
+footer .allFo .foot1 i {
+  font-size: 35px;
+}
+footer .allFo .foot1 p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+}
+footer .allFo .foot2 div a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  padding-top: 100px;
+}
+footer .allFo .foot2 div a i {
+  font-size: 15px;
+}
+footer .allFo .foot2 #m2 {
+  padding-top: 15px;
+}
+footer .allFo .foot3 ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer .allFo .foot3 ul li {
+  padding-top: 5px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+footer .allFo .foot3 ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .allFo .foot3 ul li a:hover {
+  color: #58b8cc;
+  cursor: pointer;
+}
+footer .allFo .foot4 ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+footer .allFo .foot4 ul li {
+  padding-top: 5px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+footer .allFo .foot4 ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .allFo .foot4 ul li a:hover {
+  color: #58b8cc;
+  cursor: pointer;
+}
+footer .allFo .foot5 i {
+  font-size: 25px;
+  padding-right: 15px;
+}
+footer .allFo .foot5 i:hover {
+  color: #58b8cc;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

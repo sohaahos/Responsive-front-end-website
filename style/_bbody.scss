@@ -1,0 +1,35 @@
+.bobody{
+    width: 100%;
+    margin:160px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .allCla{
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        .class{
+            width: 50vh;
+            height:250px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 90px;
+            
+            img{
+                width: 35%; 
+                height: 120px;
+            }
+            h2{
+                @extend %h2
+            }
+            p{
+                letter-spacing: 1.5px;
+                text-align: center;
+            }
+        } 
+    }
+}

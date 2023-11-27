@@ -1,0 +1,52 @@
+.access{
+    margin-top: 150px;
+    position: relative;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .diAccess{
+        width: 70%;
+        @extend%bg;
+        border-radius: 15px;
+        box-shadow: 8px 8px 4px rgb(163, 163, 177,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .contentAcc{
+            margin: 80px 55px;
+            h2{
+                @extend%h2
+            }
+            p{
+                margin-top: 50px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+        }
+        .email{
+            width: 90%;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            input{
+                margin-top: 5px;
+                width: 500px;
+                padding: 15px 10px;
+                border-radius: 15px;
+                border: none;
+                outline: none;
+                
+            }
+            button{
+
+                margin-top: 5px;
+                @extend%but;
+                width: 200px;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+footer{
+    width: 100%;
+    background-color: darken($color-body, 5%);
+    overflow: hidden;
+    .footerLogo{
+        display: flex;
+        @extend %logo;
+        padding: 100px ;
+    }
+    .allFo{
+        padding: 0 60px 60px 90px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        .fot{
+            padding-top: 50px;
+            width: 260px;
+        }
+        .foot1{
+            i{
+                font-size: 35px;
+            }
+            p{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                letter-spacing: 1px;
+            }
+        }
+        .foot2{
+            div{
+                a{
+                    text-decoration: none;
+                    color:$color-sentences;
+                    padding: 10px;
+                    padding-top: 100px;
+                    i{
+                        font-size: 15px; 
+                    }
+                }
+            }
+            #m2{
+                padding-top: 15px;
+            }
+            
+        }
+        .foot3{
+            ul{
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                li{
+                    padding-top: 5px;
+                    font-family: $font-body;
+                    font-size: 20px;
+                    font-weight: bold;
+                    user-select: none;
+                    border-radius: 20px;
+                    transition: .5s ease-in-out;
+                    a{
+                        color: $color-sentences;
+                        text-decoration: none;
+                    
+                        &:hover{
+                            color: $color-web;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+            } 
+        }
+        .foot4{
+            ul{
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                li{
+                    padding-top: 5px;
+                    font-family: $font-body;
+                    font-size: 20px;
+                    font-weight: bold;
+                    user-select: none;
+                    border-radius: 20px;
+                    transition: .5s ease-in-out;
+                    a{
+                        color: $color-sentences;
+                        text-decoration: none;
+                        &:hover{
+                            color: $color-web;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+            } 
+        }
+        .foot5{
+            i{
+                font-size : 25px;
+                padding-right: 15px;
+                &:hover{
+                    color: $color-web;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}
